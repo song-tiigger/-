@@ -7,6 +7,7 @@
     <title>민음사</title>
 </head>
 <body>
+<!-- container는 flexbox가 될 수 없음 -->
     <div class="wrapper">
         <header>
             <div class="logo-mainmenu-search-mypage">
@@ -36,6 +37,183 @@
                 </div> <!-- logo-menu-flexbox -->
             </div> <!-- logo-menu-search-mypage -->
         </header>
+        <main>
+            <article class="main-img">
+                <h2>메인 이미지</h2>
+                <img src="" alt="">
+            </article>
+            <section class="sns">
+                <h2>sns링크</h2>
+                <div class="container"> <!-- sns아이콘 이미지 총 5개 들어가야함 블로그, 인스타, 트위터, 페북, 유튭 순서 -->
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+            </section>
+            <section class="book-category">
+                <div class="category1">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">한국문학</a>
+                </div>
+                <div class="category2">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">영미문학</a>
+                </div>
+                <div class="category3">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">비문학</a>
+                </div>
+                <div class="category4">
+                    <a href="#"><img src="" alt=""></a>
+                    <a href="#">잡지</a>
+                </div>
+            </section>
+            <section class="ranking">
+                <div class="new-book">
+                    <h2>새로 나온 책</h2>
+                    <div class="new-book-box">
+                        <div class="new-book1">
+                            <h3>가벼운 선물</h3>
+                            <h4>조해주</h4>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="new-book2">
+                            <h3>다정한 서술자</h3>
+                            <h4>올가 토카르추크</h4>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="new-book3">
+                            <h3>외모</h3>
+                            <h4>ㅇㅇㅇ외 0명</h4>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                    </div> <!-- new-book-box -->
+                    <div class="view-all">
+                        <a href="#">전체보기</a>
+                    </div>
+                </div> <!-- new-book -->
+
+                <div class="best-seller">
+                    <h2>베스트셀러</h2>
+                    <div class="best-seller-box">
+                        <div class="best-seller1">
+                            <h3>데미안</h3>
+                            <h4>헤르만 헤세</h4>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="best-seller2">
+                            <h3>동물농장</h3>
+                            <h4>조지 오웰</h4>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="best-seller3">
+                            <h3>참을 수 없는 존재의 가벼움</h3>
+                            <h4>밀란 쿤데라</h4>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                    </div> <!-- new-book-box -->
+                    <div class="view-all">
+                        <a href="#">전체보기</a>
+                    </div>
+                </div> <!-- best-seller -->
+            </section> <!-- ranking -->
+
+            <section class="recommendation-books">
+                <h2>민음사 직원들이 읽고 있는 책은?</h2>
+                <div class="recommend1">
+                    <div class="staff">
+                        <img src="" alt="사람 아이콘">
+                        <p class="staff-name">이유진</p>
+                        <p class="">마케팅부</p>
+                    </div>
+                    <div class="book1">
+                        <img src="" alt="책 '다시 말해 줄래요?'의 표지">
+                        <div class="book-info">
+                            <h3>다시 말해 줄래요?</h3>
+                            <h4>황승택</h4>
+                            <p>"제목은 급성 중이염으로 인해 귀가 잘 들리지 않는 상황을 표현한 것으로 책에는 작가의 투병기가 담겨있습니다."</p>
+                        </div>
+                    </div><!-- book1 -->
+                </div> <!-- recommend1 -->
+
+                <div class="recommend2">
+                    <div class="staff">
+                        <img src="" alt="사람 아이콘">
+                        <p class="staff-name">맹미선</p>
+                        <p class="">인문사회팀</p>
+                    </div>
+                    <div class="book2">
+                        <img src="" alt="책 '바다의 긴 꽃잎'의 표지">
+                        <div class="book-info">
+                            <h3>바다의 긴 꽃잎</h3>
+                            <h4>이사벨 아옌데</h4>
+                            <p>"제목은 급성 중이염으로 인해 귀가 잘 들리지 않는 상황을 표현한 것으로 책에는 작가의 투병기가 담겨있습니다."</p>
+                        </div>
+                    </div> <!-- book2 -->
+                </div> <!-- recommend2 -->
+
+                <div class="recommend3">
+                    <div class="staff">
+                        <img src="" alt="사람 아이콘">
+                        <p class="staff-name">정기현</p>
+                        <p class="">한국문학팀</p>
+                    </div>
+                    <div class="book3">
+                        <img src="" alt="책 '바다의 긴 꽃잎'의 표지">
+                        <div class="book-info">
+                            <h3>여덟 건의 완벽한 살인</h3>
+                            <h4>피터 스완슨</h4>
+                            <p>"제목은 급성 중이염으로 인해 귀가 잘 들리지 않는 상황을 표현한 것으로 책에는 작가의 투병기가 담겨있습니다."</p>
+                        </div>
+                    </div> <!-- book3 -->
+                </div> <!-- recommend3 -->
+            </section> <!-- recommendation-books -->
+
+            <section class="yutube">
+
+            </section> <!-- yutube -->
+
+            <section class="main-service-menu">
+                <h2>민음사 주요 서비스</h2>
+                <div class="container">
+                    <div class="main-service-menu-flexbox">
+                        <div class="service1">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="service2">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="service3">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="service4">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </section> <!-- main-service-menu -->
+
+
+        </main>
+        <footer>
+            <div class="container">
+                <div class="menu-flex-box">
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="#">회원약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">문의</a></li>
+                            <li><a href="#">2차 저작권 문의 가이드 : 국내 저작물/해외 저작물</a></li>
+                            <li><a href="#">위치 및 연락처</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">소식 RSS</a></li>
+                            <li><a href="#">민음사 도서 RSS</a></li>
+                            <li><a href="#">ENGLISH</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
     </div>
     
 </body>
