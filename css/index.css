@@ -18,6 +18,10 @@ body {
     /* background-color: crimson; */
 }
 
+footer .divide-line {
+    padding: 0 10px;
+    color: #999999;
+}
 
 /* ==================== header ==================== */
 header {
@@ -151,8 +155,15 @@ main {
 .new-book-flexbox > h2,
 .best-seller-flexbox > h2 {
     min-width: 180px;
-    margin-top: 100px;
     margin-right: 20px;
+}
+
+.new-book-flexbox > h2 {
+    margin-top: 46px;
+}
+
+.best-seller-flexbox > h2 {
+    margin-top: 126px;
 }
 
 .new-book-bg,
@@ -225,9 +236,6 @@ main {
     margin-top: 80px;
 }
 
-
-
-
 /* ========== recommendation ========== */
 .recommendation {
     position: relative;
@@ -293,18 +301,53 @@ main {
 
 .book-info {
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 340px;
-    line-height: 1.5em;
 }
 
-.book-info p {
+.book-info .d-flex {
+    display: flex;
+    align-items: flex-end;
+}
 
+.book-info .d-flex p {
+    margin-left: 10px;
+    padding-bottom: 4px;
+}
+
+.book-info .preview {
+    font-size: 18px;
+    line-height: 30px;
+    background-color: pink;
 }
 
 
+.recommend2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: right;
 
+}
 
+.recommend2 > div {
+    order: 2;
+}
+
+.recommend2 .book-info {
+    order: 1;
+    top: 180px;
+    left: -860px;
+    text-align: right;
+}
+
+.recommend2 .book-info .d-flex {
+    justify-content: right;
+}
+
+.recommend2 .book-info .d-flex > h3 {
+    order: 2;
+    margin-left: 10px;
+}
 
 
 
@@ -347,12 +390,6 @@ main {
 }
 
 
-
-
-
-
-
-
 /* ========== main-service-menu ========== */
 .main-service-menu {
     margin-top: 200px;
@@ -365,7 +402,16 @@ main {
 
 .main-service-menu-flexbox {
     display: flex;
+    justify-content: space-between;
 }
+
+.main-service-menu-flexbox div {
+    width: 260px;
+    height: 260px;
+    background-color: #f8f2f2;
+    border-radius: 50%;
+}
+
 
 .main-service-menu-flexbox img {
     width: 240px;
@@ -378,6 +424,39 @@ main {
 
 
 /* ==================== footer ==================== */
+footer {
+    height: 200px;
+    padding: auto 0;
+    /* background-color: aliceblue; */
+}
+
+.footer-menu {
+    margin: 20px 0;
+}
+
 .footer-menu > ul {
     display: flex;
 }
+
+.footer-menu > ul li {
+
+}
+
+.footer-menu > ul li:nth-child(3) a {
+    color: #be3636;
+}
+
+.footer-info div:nth-child(2) {
+    margin: 10px 0;
+}
+
+select {
+    position: absolute;
+    right: 10px;
+}
+
+.copyright {
+    margin: 30px 0;
+    text-align: right;
+}
+
