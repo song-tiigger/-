@@ -15,7 +15,7 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0 10px;
-    /* background-color: crimson; */
+    background-color: crimson;
 }
 
 footer .divide-line {
@@ -318,25 +318,16 @@ main {
 .book-info .preview {
     font-size: 18px;
     line-height: 30px;
-    background-color: pink;
 }
 
-
+/* recommend2 오른쪽 정렬 시작 */
 .recommend2 {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: right;
-
-}
-
-.recommend2 > div {
-    order: 2;
+    float: right;
 }
 
 .recommend2 .book-info {
-    order: 1;
     top: 180px;
-    left: -860px;
+    left: -740px;
     text-align: right;
 }
 
@@ -345,17 +336,13 @@ main {
 }
 
 .recommend2 .book-info .d-flex > h3 {
-    order: 2;
     margin-left: 10px;
 }
+/* recommend2 오른쪽 정렬 끝 */
 
-
-
-
-
-
-
-
+.recommend3 {
+    margin-top: 500px;
+}
 
 
 /* ========== yutube ========== */
@@ -406,16 +393,47 @@ main {
 }
 
 .main-service-menu-flexbox div {
-    width: 260px;
-    height: 260px;
+    position: relative;
+    width: 240px;
+    height: 240px;
     background-color: #f8f2f2;
     border-radius: 50%;
 }
 
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.main-service-menu-flexbox img {
+.service a,
+.service a .service-title {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service4 a img {
+    width: 160px;
+    height: auto;
+}
+
+.service-title {
     width: 240px;
     height: 240px;
+    text-align: center;
+    line-height: 240px;
+    background-color: rgba(0, 0, 0, .9);
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.service1 a img:hover + .service-title1,
+.service2 a img:hover + .service-title2,
+.service3 a img:hover + .service-title3,
+.service4 a img:hover + .service-title4 {
+    opacity: 1;
+
 }
 
 
@@ -436,10 +454,6 @@ footer {
 
 .footer-menu > ul {
     display: flex;
-}
-
-.footer-menu > ul li {
-
 }
 
 .footer-menu > ul li:nth-child(3) a {
